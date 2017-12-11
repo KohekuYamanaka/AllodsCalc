@@ -311,7 +311,9 @@ app.delete('/build',  validate(build_schema), function(req, res) {
 	});
 });
 
-  const port = 8080;
-  app.listen(port);
-  console.log('Server running on port ' + port);
+  var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
+  var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1';
+
+  app.listen(server_port);
+  console.log('Server running on port ' + server_port);
  })
