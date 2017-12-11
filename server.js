@@ -190,15 +190,7 @@ app.propfind('/build', validate(session_schema), function(req, res) {
     		dirpath = __dirname+'/users/'+OPEN_SESSIONS[req.body.sid]
     		try
     		{
-    			rawblist = fs.readdirSync(dirpath);
-          blist = [];
-          for(i=0; i < blist.length; i++)
-          {
-            if(/\.ao/.test(rawblist[i]))
-            {
-              blist.push(rawblist[i]);
-            }
-          }
+    			blist = fs.readdirSync(dirpath);
     			answer = {state: 'success', builds: blist};
     		}
     		catch(err)
