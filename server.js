@@ -311,7 +311,7 @@ app.delete('/build',  validate(build_schema), function(req, res) {
 	});
 });
 
-  const port = 80;
+  const port = 8080;
   app.listen(port);
   console.log('Server running on port ' + port);
  })
