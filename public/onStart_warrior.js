@@ -29,20 +29,34 @@ function createWindow(event)
     //content.style.left = (divtable.offsetLeft+button.parentNode.offsetLeft+button.parentNode.offsetWidth) + 'px';
     //content.style.top  = (divtable.offsetTop+button.parentNode.parentNode.offsetTop) + 'px';
 
+    wwidth   = screen.availWidth; 
     wheight  = screen.availHeight; 
     buttRect = button.getBoundingClientRect();
 
-    content.style.left   = buttRect.right + 'px';
-    content.style.top    = buttRect.top + 'px';
-    content.style.bottom = 'auto';
-
-    divbody = document.querySelector('body');
-    divbody.appendChild(content);
-
-    if(buttRect.top+content.offsetHeight >= wheight-20)
+    if(wwidth >= 900)
     {
-    	content.style.top    = 'auto';
-    	content.style.bottom = '0px';
+        content.style.left   = buttRect.right + 'px';
+        content.style.top    = buttRect.top + 'px';
+        content.style.bottom = 'auto';
+
+        divbody = document.querySelector('body');
+        divbody.appendChild(content);
+
+        if(buttRect.top+content.offsetHeight >= wheight-20)
+        {
+            content.style.top    = 'auto';
+            content.style.bottom = '0px';
+        }
+    }
+    else
+    {
+        content.style.bottom   = '0px';
+        content.style.width    = '100%';
+        content.style.height   = '30vh';
+        content.style.overflow = 'auto';
+
+        divbody = document.querySelector('body');
+        divbody.appendChild(content);
     }
     for (i = 0; i<init_func.length; i++)
     {

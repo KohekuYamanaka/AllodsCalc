@@ -7,30 +7,57 @@ for(i=0; i < butt.length; i++)
 //button = 0;
 function createWindow(event)
 {
-	if(document.getElementsByClassName('window').length != 0) return;
+    if(document.getElementsByClassName('window').length != 0) return;
 
-	button = event.target;
+    button = event.target;
     link = document.querySelector('link[rel=import]');
     needs_id = '#b'+button.name.replace('bard','')+'rank'+button.rank;
     content = link.import.querySelector(needs_id);
     try
     {
-    	if(!content.className == 'window') return;
+        if(!content.className == 'window') return;
     }
     catch(err)
     {
-    	return;
+        return;
     }
     content = content.cloneNode(true);
     //content.id = 'currentWindow';
 
     divtable = document.querySelector('.bard table');
 
-    content.style.left = (divtable.offsetLeft+button.parentNode.offsetLeft+button.parentNode.offsetWidth) + 'px';
-    content.style.top  = (divtable.offsetTop+button.parentNode.parentNode.offsetTop) + 'px';
+    //content.style.left = (divtable.offsetLeft+button.parentNode.offsetLeft+button.parentNode.offsetWidth) + 'px';
+    //content.style.top  = (divtable.offsetTop+button.parentNode.parentNode.offsetTop) + 'px';
 
-    divbard = document.querySelector('.bard');
-    divbard.appendChild(content);
+    wwidth   = screen.availWidth; 
+    wheight  = screen.availHeight; 
+    buttRect = button.getBoundingClientRect();
+
+    if(wwidth >= 900)
+    {
+        content.style.left   = buttRect.right + 'px';
+        content.style.top    = buttRect.top + 'px';
+        content.style.bottom = 'auto';
+
+        divbody = document.querySelector('body');
+        divbody.appendChild(content);
+
+        if(buttRect.top+content.offsetHeight >= wheight-20)
+        {
+            content.style.top    = 'auto';
+            content.style.bottom = '0px';
+        }
+    }
+    else
+    {
+        content.style.bottom   = '0px';
+        content.style.width   = '100%';
+        content.style.height   = '30vh';
+        content.style.overflow = 'auto';
+
+        divbody = document.querySelector('body');
+        divbody.appendChild(content);
+    }
     for (i = 0; i<init_func.length; i++)
     {
         try
@@ -41,7 +68,7 @@ function createWindow(event)
         {
 
         }
-    }   	
+    }   
 }
 
 function deleteWindow(event)
