@@ -91,7 +91,8 @@ MongoClient.connect(dburl, function(err, db) {
       {
      	answer = { state: 'success'};
      	fs.mkdirSync(__dirname+'/users/'+ usr.login);
-        res.send(answer);
+      fs.writeFileSync((__dirname+'/users/nodata', 'User created.');
+      res.send(answer);
       }
        console.log({event:'registration', result:answer, data:usr})
     });
