@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'AllodsWest';
+  src: url('AllodsWest.ttf') format('truetype');
+ }
+
+body
+{
+	background-color: #1d1018;
+	margin:0;
+	font-family: 'AllodsWest', "Comic Sans MS";
+}
+.title
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	background-color: #142300;
+	height: 150px;
+	align-items: center;
+}
+.title img { 
+	height: 140px; 
+	width: auto; 
+}
+a.entry{
+	background-color: #5b3a29;
+	box-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	left: 2rem;
+	top: 2rem;
+	font-family: 'AllodsWest';
+	font-size: 16px;
+	text-align: center;
+}
+.title form fieldset label
+{
+	font-size: 17px;
+}
+.classes
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #123524;
+	height: 100px;
+	align-items: center;
+}
+.classes img { 
+	height: 80px; 
+	width: auto;
+	z-index: 0; 
+}
+.enter
+{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: #214536;
+	align-items: center;
+	color: white;
+	padding: 10px;
+}
+
+.blocks
+{
+	font-family: 'AllodsWest';
+	font-size: 17px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+}
+
+.blocks input, .blocks button
+{
+	width: 45px;
+	margin-top: 5px;
+	background-color: #2b2517;
+	border-color: #2b2517;
+	border-radius: 5px;
+	font-family: 'AllodsWest';
+	font-size: 14px;
+	color: white;
+	text-align: center;
+}
+
+.bard table caption
+{
+	color: white;
+	font-size: 18px;
+	margin-bottom: 15px; 
+}
+
+#skill_count
+{
+	display: inline-block;
+	font-size: 22px;
+}
+
+.bard{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 800px;
+	align-items: center;
+	background-color: darkslategray;
+}
+.bard table  { 
+	height: 600px; 
+	width: auto; 
+	background-color: darkslategray;
+}
+.bard table button {
+	height: 50px;
+	padding: 0px;
+	margin: 2px;
+	box-sizing: content-box;
+	background: darkslategray; 
+	border-color: darkslategray;
+	border-width: 4px;
+	border-radius: 9px;
+	filter: grayscale(80%);
+}
+.bard table tbody{ 
+	position: relative;
+}
+.save
+{
+	font-family: 'AllodsWest';
+	font-size: 17px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: darkslategray;
+	color: white;
+	vertical-align: top;
+}
+.save button, .save input
+{
+	width: 100px;
+	margin-top: 5px;
+	background-color: #2b2517;
+	border-color: #2b2517;
+	border-radius: 5px;
+	font-family: 'AllodsWest';
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+.cellar
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	background-color: #1d1018;
+	height: 205px;
+	align-items: center;
+}
+.cellar img { 
+	height: 200px; 
+	width: auto; 
+}
+
+
+@media only screen and (max-device-width: 900px)
+{
+	.enter
+	{
+		flex-direction: column;
+	}
+ 
+}
+

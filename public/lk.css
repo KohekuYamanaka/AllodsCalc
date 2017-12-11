@@ -1,0 +1,86 @@
+@font-face {
+  font-family: 'AllodsWest';
+  src: url('AllodsWest.ttf') format('truetype');
+ }
+
+body
+{
+	background-color: darkslategray;
+	margin:0;
+	font-family: 'AllodsWest', "Comic Sans MS";
+	background-color: darkslategray;
+}
+.title
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	background-color: #142300;
+	height: 150px;
+	align-items: center;
+}
+.title img { 
+	height: 140px; 
+	width: auto; 
+}
+.title form fieldset label
+{
+	font-size: 17px;
+}
+.list
+{
+	min-height: 700px;
+	background-color: darkslategray;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-bottom: 50px;
+}
+.builds_table
+{
+	border-spacing: 20px 10px;
+	color: white;	
+	font-size: 18px;
+}
+.builds_table
+{
+	min-width: 30%;
+	max-width: 80%;
+}
+.form_button
+{
+	margin-left: 20px;
+	width: 80px;
+	background-color: #2b2517;
+	border-color: #2b2517;
+	border-radius: 5px;
+	font-family: 'AllodsWest';
+	font-size: 14px;
+	color: white;
+	text-align: center;
+}
+.cellar
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	background-color: #1d1018;
+	height: auto;
+	align-items: center;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.cellar img { 
+	height: 200px; 
+	width: auto; 
+}
+
+.build_container
+{
+	min-width:30%;
+}

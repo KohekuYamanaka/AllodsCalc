@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Калькулятор талантов АО</title>
+	<link rel="stylesheet" href="bard_css.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<script src="button_bard.js"></script>
+	<link rel="import" href="./bard_reference_html.html">
+	<script src="login.js"></script>
+</head>
+<body>
+	<div class="title">
+		<a href="lk.html" class="entry">Вход</a>
+		<a href="index.html"><img src="logo.png"></a>
+	</div>
+	<div class="classes">
+		<a href="warrior_html.html"><img src="classes/Warrior.png" title="Воин"></a>
+		<a href="psionic_html.html"><img src="classes/Psionic.png" title="Мистик"></a>
+		<a href="bard_html.html"><img src="classes/Bard.png" title="Бард"></a>
+	</div>
+	<div class="enter">
+			<div class="blocks">
+				<label>Количество очков умений</label>
+				<input type="text" id="skill">
+			</div>
+			<div class="blocks">
+				<label>Урон оружия</label>
+				<input type="text" id="weapon_damage">
+			</div>
+			<div class="blocks">
+				<label>Магический урон</label>
+				<input type="text" id="magical_damage">
+			</div>
+			<div class="blocks">
+				<label>Множитель лечения</label>
+				<input type="text" id="heal">
+			</div>
+			<div class="blocks">
+				<br><button onclick="OK()">ОК</button>
+			</div>
+	</div>
+	<div class="bard">
+		<table>
+			<caption>Осталось очков умений:&nbsp;<div id="skill_count"></div></caption>
+			<tr><td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard11" class="bbutton" onclick="leftclick(0)"><img src="bard/Dissonance.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard12" class="bbutton" onclick="leftclick(1)"><img src="bard/DancingSword.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard13" class="bbutton" onclick="leftclick(2)"><img src="bard/Terrify.(UITexture).png"></button></td>
+				<td></td>
+			</tr>
+			<tr><td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard22" class="bbutton" onclick="leftclick(3)"><img src="bard/FlyingSword.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard23" class="bbutton" onclick="leftclick(4)"><img src="bard/AcousticBarrier.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard24" class="bbutton" onclick="leftclick(5)"><img src="bard/MassDissonance.(UITexture).png"></td>
+			</button></tr>
+			<tr><td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard31" class="bbutton" onclick="leftclick(6)"><img src="bard/GainParry.(UITexture).png"></button></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard33" class="bbutton" onclick="leftclick(7)"><img src="bard/VampireChord.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard34" class="bbutton" onclick="leftclick(8)"><img src="all/Buff_Might.(UITexture).png"></button></td>
+			</tr>
+			<tr><td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard41" class="bbutton" onclick="leftclick(9)"><img src="all/Aspect_Damage.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard42" class="bbutton" onclick="leftclick(10)"><img src="bard/ExtraAttackOnDancingSword.(UITexture).png"></button></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard44" class="bbutton" onclick="leftclick(11)"><img src="bard/Lullaby.(UITexture).png"></td>
+			</button></tr>
+			<tr><td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard51" class="bbutton" onclick="leftclick(12)"><img src="all/Aspect_Buff.(UITexture).png"></button></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard53" class="bbutton" onclick="leftclick(13)"><img src="bard/Lure.(UITexture).png"></button></td>
+				<td></td>
+			</tr>
+			<tr><td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard62" class="bbutton" onclick="leftclick(14)"><img src="all/Buff_Valour.(UITexture).png"></button></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard64" class="bbutton" onclick="leftclick(15)"><img src="all/Buff_Bloodlust.(UITexture).png"></button></td>
+			</tr>
+			<tr><td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard71" class="bbutton" onclick="leftclick(16)"><img src="bard/DissonanceUpgrade.(UITexture).png"></button></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard73" class="bbutton" onclick="leftclick(17)"><img src="bard/AcousticBarrierUpgrade.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard74" class="bbutton" onclick="leftclick(18)"><img src="all/Buff_Swiftness.(UITexture).png"></button></td>
+			</tr>
+			<tr><td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard82" class="bbutton" onclick="leftclick(19)"><img src="bard/ConsumeMagic.(UITexture).png"></button></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard84" class="bbutton" onclick="leftclick(20)"><img src="all/Buff_Bravery.(UITexture).png"></button></td>
+			</tr>
+			<tr><td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard91" class="bbutton" onclick="leftclick(21)"><img src="bard/DoubleVirtue.(UITexture).png"></button></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard93" class="bbutton" onclick="leftclick(22)"><img src="bard/Cover.(UITexture).png"></button></td>
+				<td></td>
+			</tr>
+			<tr><td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard102" class="bbutton" onclick="leftclick(23)"><img src="bard/Entree.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="bard103" class="bbutton" onclick="leftclick(24)"><img src="bard/Healsong.(UITexture).png"></button></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
+	<div class="save">
+		<form>
+			<label>Название:</label>
+			<input type="text" id="build_name">
+			<input type="button" onclick="saveBuild()" value="Сохранить">
+		<form>
+			<div id="warning" style="color:yellow;text-align: center;min-height: 2rem;vertical-align: middle;"></div>
+	</div>
+	<div class="cellar">
+		<a href="https://allods.mail.ru/" target="_blank"><img src="/all/WrapAllodsLogoV9.(UITexture)_cr.png"></a>
+	</div>
+	<script src="onStart_bard.js"></script>
+</body>
+</html>

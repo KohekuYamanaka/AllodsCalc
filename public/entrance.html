@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="entrance.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+  <script src="login.js"></script>
+</head>
+<body>
+	<div class="title">
+		<a href="index.html"><img src="logo.png"></a>
+	</div>
+  <div id="warning"></div>
+	<div class="forms">
+		<form name="entry">
+			<fieldset>
+   				<legend><b>Вход</b></legend>
+    			<label for="login">Логин</label><br>
+    			<input id="ent_login" type="text"><br>
+    			<label for="password">Пароль</label><br>
+    			<input id="ent_password" type="password">
+  		</fieldset>
+  			<input class="ok" type="button" value="Войти" onclick="onEntry()">
+		</form>
+		<form name="registration">
+			<fieldset>
+   				<legend><b>Регистрация</b></legend>
+    			<label for="login">Логин</label><br>
+    			<input id="reg_login" type="text"><br>
+    			<label for="password">Пароль</label><br>
+    			<input id="reg_password1" type="password"><br>
+    			<label for="password">Подтверждение пароля</label><br>
+    			<input id="reg_password2" type="password">
+  			</fieldset>
+  			<input class="ok" type="button" value="Зарегестрироваться" onclick="onReg()">
+		</form>
+	</div>
+</body>
+</html>

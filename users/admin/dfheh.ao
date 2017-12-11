@@ -1,0 +1,55 @@
+<div class="psionic">
+		<table>
+			<caption>Осталось очков умений:&nbsp;<div id="skill_count" style="color: white;">56</div></caption>
+			<tbody><tr><td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic11" class="pbutton" onclick="leftclick(0)" style="border-color: yellow; filter: grayscale(0%);"><img src="psionic/PsionicMindStab.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic12" class="pbutton" onclick="leftclick(1)" style="border-color: yellow; filter: grayscale(0%);"><img src="psionic/SearedMind.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic13" class="pbutton" onclick="leftclick(2)" style="border-color: red; filter: grayscale(0%);"><img src="psionic/PsionicDominate.(UITexture).png"></button></td>
+				<td></td>
+			</tr>
+			<tr><td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic21" class="pbutton" onclick="leftclick(3)" style="border-color: darkslategray; filter: grayscale(90%);"><img src="psionic/PowerofSuggestion.(UITexture).png"></button></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic23" class="pbutton" onclick="leftclick(4)" style="border-color: orange; filter: grayscale(0%);"><img src="psionic/PsionicSuffocate.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic24" class="pbutton" onclick="leftclick(5)" style="border-color: orange; filter: grayscale(0%);"><img src="psionic/PsionicMindShield.(UITexture).png"></button></td>
+			</tr>
+			<tr><td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic32" class="pbutton" onclick="leftclick(6)" style="border-color: darkslategray; filter: grayscale(90%);"><img src="psionic/PsionicBodyAdjustment.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic33" class="pbutton" onclick="leftclick(7)" style="border-color: orange; filter: grayscale(0%);"><img src="psionic/PsionicContactMind.(UITexture).png"></button></td>
+				<td></td>
+			</tr>
+			<tr><td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic41" class="pbutton" onclick="leftclick(8)" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);" disabled=""><img src="all/Aspect_Damage.(UITexture).png"></button></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic43" class="pbutton" onclick="leftclick(9)" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);" disabled=""><img src="psionic/PsionicPhantasmalKiller.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic44" class="pbutton" onclick="leftclick(10)" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);" disabled=""><img src="psionic/ReducingProtection.(UITexture).png"></button></td>
+			</tr>
+			<tr><td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic51" class="pbutton" onclick="leftclick(11)" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);" disabled=""><img src="psionic/WarriorFlurryOfBlows.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic52" class="pbutton" onclick="leftclick(12)" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);" disabled=""><img src="all/Aspect_Buff.(UITexture).png"></button></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr><td></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic63" class="pbutton" onclick="leftclick(13)" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);" disabled=""><img src="all/Aspect_Control.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic64" class="pbutton" onclick="leftclick(14)" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);" disabled=""><img src="psionic/PsionicInjury.png"></button></td>
+			</tr>
+			<tr><td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic71" class="pbutton" onclick="leftclick(15)" disabled="" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);"><img src="psionic/PsionicMindStabUpgrade.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic72" class="pbutton" onclick="leftclick(16)" disabled="" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);"><img src="psionic/PsionicMeditation.(UITexture).png"></button></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic74" class="pbutton" onclick="leftclick(17)" disabled="" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);"><img src="psionic/PsionicFear.png"></button></td>
+			</tr>
+			<tr><td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic81" class="pbutton" onclick="leftclick(18)" disabled="" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);"><img src="psionic/PsionicTelekineticThrow.(UITexture).png"></button></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic83" class="pbutton" onclick="leftclick(19)" disabled="" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);"><img src="psionic/MergingMinds.chn.(UITexture).png"></button></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic84" class="pbutton" onclick="leftclick(20)" disabled="" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);"><img src="psionic/NecromancerEctoFormUpgrade.(UITexture).png"></button></td>
+			</tr>
+			<tr><td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic92" class="pbutton" onclick="leftclick(21)" disabled="" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);"><img src="psionic/MergingMinds.(UITexture).png"></button></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic94" class="pbutton" onclick="leftclick(22)" disabled="" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);"><img src="psionic/NecromancerFear.(UITexture).png"></button></td>
+			</tr>
+			<tr><td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic101" class="pbutton" onclick="leftclick(23)" disabled="" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);"><img src="psionic/Entropy.(UITexture).png"></button></td>
+				<td></td>
+				<td></td>
+				<td><button onmouseenter="createWindow(event)" onmouseleave="deleteWindow(event)" type="button" name="psionic104" class="pbutton" onclick="leftclick(24)" disabled="" style="border-color: darkslategray; filter: grayscale(90%) brightness(0.25);"><img src="psionic/Superiority.(UITexture).png"></button></td>
+			</tr>
+		</tbody></table>
+	</div>
